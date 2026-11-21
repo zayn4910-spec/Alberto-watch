@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Watch Company</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="../CSS/home.css">
+</head>
+
+<body>
+
+
+<!-- NAVBAR START -->
+<nav class="navbar">
+<a href="home.html" class="navbar-logo">
+    <img src="images/Alberto Watch Company Emblem.png"
+         alt="Alberto Watch Company Logo">
+</a>
+    <!-- MOBILE MENU BUTTON -->
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <!-- NAVIGATION LINKS -->
+    <ul class="nav-links" id="navLinks">
+
+        <li><a href="home.html">Home</a></li>
+
+        <li><a href="products.html">Products</a></li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+
+        <!-- DROPDOWN -->
+        <li class="dropdown">
+
+            <button onclick="toggleDropdown()" class="drop-btn">
+                More Pages ▼
+            </button>
+
+            <div class="dropdown-content" id="dropdownMenu">
+
+                <a href="categories.html">Categories</a>
+
+                <a href="compare.html">Compare Brands</a>
+
+                <a href="services.html">Repair & Services</a>
+
+                <a href="gallery.html">Gallery</a>
+
+                <a href="store.html">Store Locator</a>
+
+                <a href="support.html">Support</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="technology.html">Technology</a>
+
+            </div>
+        </li>
+
+    </ul>
+
+</nav>
+<!-- NAVBAR END -->
+
+
+<!-- carousel start -->
+
+<!-- WATCH CAROUSEL -->
+<div class="watch-carousel">
+
+    <!-- WATCH 1 -->
+    <div class="watch-slide active">
+        <img src="images/rolex.jpg" alt="Rolex Watch">
+        <h2>Rolex</h2>
+        <p>Luxury Timepieces</p>
+    </div>
+
+    <!-- WATCH 2 -->
+    <div class="watch-slide">
+        <img src="images/Bulova.jpg" alt="Bulova Watch">
+        <h2>Bulova</h2>
+        <p>Timeless Craftsmanship</p>
+    </div>
+
+    <!-- WATCH 3 -->
+    <div class="watch-slide">
+        <img src="images/Michael Kors.jpg" alt="Michael Kors Watch">
+        <h2>Michael Kors</h2>
+        <p>Modern Elegance</p>
+    </div>
+
+    <!-- PREVIOUS AND NEXT BUTTONS -->
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯ </button>
+
+</div>
+
+<!-- carousel end -->
+
+
+<!-- cards start -->
+
+<h2 class="watch-heading">Our Premium Watches</h2>
+
+<div class="watch-container">
+
+    <!-- ROLEX CARD -->
+    <section class="card" style="max-width: 320px">
+        <img src="images/rolex.jpg" class="card-img-top" alt="Rolex Watch">
+
+        <div class="card-body">
+            <h4 class="card-title">Rolex</h4>
+
+            <p class="card-text">
+                Rolex offers luxury watches with premium
+                quality and timeless designs.
+            </p>
+
+            <a href="#" class="btn-solid theme-primary">
+                View Details
+            </a>
+        </div>
+    </section>
+
+
+    <!-- MICHAEL KORS CARD -->
+    <section class="card" style="max-width: 320px">
+        <img src="images/Michael Kors.jpg" class="card-img-top" alt="Michael Kors Watch">
+
+        <div class="card-body">
+            <h4 class="card-title">Michael Kors</h4>
+
+            <p class="card-text">
+                Michael Kors watches combine modern
+                fashion with stylish designs.
+            </p>
+
+            <a href="#" class="btn-solid theme-primary">
+                View Details
+            </a>
+        </div>
+    </section>
+
+
+    <!-- BULOVA CARD -->
+    <section class="card" style="max-width: 320px">
+        <img src="images/Bulova.jpg" class="card-img-top" alt="Bulova Watch">
+
+        <div class="card-body">
+            <h4 class="card-title">Bulova</h4>
+
+            <p class="card-text">
+                Bulova is known for precision,
+                innovation and classic designs.
+            </p>
+
+            <a href="#" class="btn-solid theme-primary">
+                View Details
+            </a>
+        </div>
+    </section>
+
+
+    <!-- CITIZEN CARD -->
+    <section class="card" style="max-width: 320px">
+        <img src="images/citizen.jpg" class="card-img-top" alt="Citizen Watch">
+
+        <div class="card-body">
+            <h4 class="card-title">Citizen</h4>
+
+            <p class="card-text">
+                Citizen Eco-Drive watches use light
+                to power their technology.
+            </p>
+
+            <a href="#" class="btn-solid theme-primary">
+                View Details
+            </a>
+        </div>
+    </section>
+
+
+    <!-- OMEGA CARD -->
+    <section class="card" style="max-width: 320px">
+        <img src="images/omega.jpg" class="card-img-top" alt="Omega Watch">
+
+        <div class="card-body">
+            <h4 class="card-title">Omega</h4>
+
+            <p class="card-text">
+                Omega watches are famous for luxury,
+                precision and elegant Swiss designs.
+            </p>
+
+            <a href="#" class="btn-solid theme-primary">
+                View Details
+            </a>
+        </div>
+    </section>
+
+
+    <!-- CASIO CARD -->
+    <section class="card" style="max-width: 320px">
+        <img src="images/casio.jpg" class="card-img-top" alt="Casio Watch">
+
+        <div class="card-body">
+            <h4 class="card-title">Casio</h4>
+
+            <p class="card-text">
+                Casio watches offer durability,
+                advanced features and modern styles.
+            </p>
+
+            <a href="#" class="btn-solid theme-primary">
+                View Details
+            </a>
+        </div>
+    </section>
+
+</div>
+
+<!-- cards end -->
+
+
+<!-- footer start -->
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- COMPANY DETAILS -->
+        <div class="footer-section">
+            <h2>ALBERTO</h2>
+            <h5>WATCH COMPANY</h5>
+
+            <p>
+                Discover timeless luxury and elegance.
+                We provide premium watches with quality,
+                style and excellent craftsmanship.
+            </p>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#technology">Technology</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About Us</a>
+        </div>
+
+        <!-- OUR BRANDS -->
+        <div class="footer-section">
+            <h3>Our Brands</h3>
+
+            <a href="https://www.rolex.com/en-us">Rolex</a>
+            <a href="https://www.michaelkors.global/pk/en/">Michael Kors</a>
+            <a href="https://www.bulova.com/us/en/collection/mens-watches">Bulova</a>
+            <a href="https://citizenwatch.com/us/en/collection/mens">Citizen</a>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+
+            <p>Email: info@albertowatches.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Address: Karachi, Pakistan</p>
+        </div>
+
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-social">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>
+            © 2026 Alberto Watch Company.
+            All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+<!-- FOOTER END -->
+
+
+
+
+
+<!-- JAVASCRIPT FILE -->
+<script src="../JS/home.js"></script>
+
+</body>
+</html>
