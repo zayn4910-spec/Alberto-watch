@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Watch Company</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="../CSS/products.css">
+</head>
+
+<body>
+
+
+
+<!-- NAVBAR START -->
+<nav class="navbar">
+<a href="home.html" class="navbar-logo">
+    <img src="images/Alberto Watch Company Emblem.png"
+         alt="Alberto Watch Company Logo">
+</a>
+    <!-- MOBILE MENU BUTTON -->
+    <button class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <!-- NAVIGATION LINKS -->
+    <ul class="nav-links" id="navLinks">
+
+        <li><a href="home.html">Home</a></li>
+
+        <li><a href="products.html">Products</a></li>
+
+        <li><a href="contact.html">Contact Us</a></li>
+
+        <!-- DROPDOWN -->
+        <li class="dropdown">
+
+            <button onclick="toggleDropdown()" class="drop-btn">
+                More Pages ▼
+            </button>
+
+            <div class="dropdown-content" id="dropdownMenu">
+
+                <a href="categories.html">Categories</a>
+
+                <a href="compare.html">Compare Brands</a>
+
+                <a href="services.html">Repair & Services</a>
+
+                <a href="gallery.html">Gallery</a>
+
+                <a href="store.html">Store Locator</a>
+
+                <a href="support.html">Support</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="technology.html">Technology</a>
+
+            </div>
+        </li>
+
+    </ul>
+
+</nav>
+<!-- NAVBAR END -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- card -->
+
+
+<!-- WATCH CARDS -->
+
+<section class="watch-container" id="watches">
+
+    <!-- ROLEX -->
+    <section class="card">
+        <img src="images/rolex.jpg" class="card-img-top" alt="Rolex">
+
+        <div class="card-body">
+            <h4 class="card-title">Rolex</h4>
+            <p class="card-text">Experience timeless luxury and outstanding craftsmanship.</p>
+            <p class="price">Rs. 250,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Rolex','images/rolex.jpg','Rs. 250,000','Experience timeless luxury and outstanding craftsmanship.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <!-- MICHAEL KORS -->
+    <section class="card">
+        <img src="images/Michael Kors.jpg" class="card-img-top" alt="Michael Kors">
+
+        <div class="card-body">
+            <h4 class="card-title">Michael Kors</h4>
+            <p class="card-text">A stylish watch designed for modern fashion lovers.</p>
+            <p class="price">Rs. 85,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Michael Kors','images/Michael Kors.jpg','Rs. 85,000','A stylish watch designed for modern fashion lovers.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <!-- BULOVA -->
+    <section class="card">
+        <img src="images/Bulova.jpg" class="card-img-top" alt="Bulova">
+
+        <div class="card-body">
+            <h4 class="card-title">Bulova</h4>
+            <p class="card-text">Beautiful design combined with precision technology.</p>
+            <p class="price">Rs. 95,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Bulova','images/Bulova.jpg','Rs. 95,000','Beautiful design combined with precision technology.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <!-- CITIZEN -->
+    <section class="card">
+        <img src="images/citizen.jpg" class="card-img-top" alt="Citizen">
+
+        <div class="card-body">
+            <h4 class="card-title">Citizen</h4>
+            <p class="card-text">Elegant everyday watches with reliable performance.</p>
+            <p class="price">Rs. 75,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Citizen','images/citizen.jpg','Rs. 75,000','Elegant everyday watches with reliable performance.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <!-- OMEGA -->
+    <section class="card">
+        <img src="images/omega.jpg" class="card-img-top" alt="Omega">
+
+        <div class="card-body">
+            <h4 class="card-title">Omega</h4>
+            <p class="card-text">Premium Swiss watchmaking with a classic appearance.</p>
+            <p class="price">Rs. 180,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Omega','images/omega.jpg','Rs. 180,000','Premium Swiss watchmaking with a classic appearance.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <!-- CASIO -->
+    <section class="card">
+        <img src="images/casio.jpg" class="card-img-top" alt="Casio">
+
+        <div class="card-body">
+            <h4 class="card-title">Casio</h4>
+            <p class="card-text">Durable and practical watches for everyday adventures.</p>
+            <p class="price">Rs. 35,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Casio','images/casio.jpg','Rs. 35,000','Durable and practical watches for everyday adventures.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <!-- SEIKO -->
+    <section class="card">
+        <img src="images/seiko.jfif" class="card-img-top" alt="Seiko">
+
+        <div class="card-body">
+            <h4 class="card-title">Seiko</h4>
+            <p class="card-text">Japanese engineering with a sophisticated design.</p>
+            <p class="price">Rs. 65,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Seiko','images/seiko.jpg','Rs. 65,000','Japanese engineering with a sophisticated design.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+    <!-- TISSOT -->
+    <section class="card">
+        <img src="images/tissot.jfif" class="card-img-top" alt="Tissot">
+
+        <div class="card-body">
+            <h4 class="card-title">Tissot</h4>
+            <p class="card-text">A perfect combination of elegance and innovation.</p>
+            <p class="price">Rs. 110,000</p>
+
+            <button class="btn-solid"
+            onclick="viewDetails('Tissot','images/tissot.jpg','Rs. 110,000','A perfect combination of elegance and innovation.')">
+                View Details
+            </button>
+        </div>
+    </section>
+
+</section>
+
+
+<!-- WATCH DETAILS POPUP -->
+
+<div class="modal" id="watchModal">
+
+    <div class="modal-content" id="modalBackground">
+
+        <span class="close-btn" onclick="closeDetails()">&times;</span>
+
+        <div class="modal-details">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <p class="modal-price" id="modalPrice"></p>
+
+            <button class="btn-solid" onclick="addToCart()">
+                Add to Cart
+            </button>
+
+            <button class="btn-solid" onclick="buyNow()">
+                Buy Now
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- card ends -->
+
+
+
+<!-- footer start -->
+
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- COMPANY DETAILS -->
+        <div class="footer-section">
+            <h2>ALBERTO</h2>
+            <h5>WATCH COMPANY</h5>
+
+            <p>
+                Discover timeless luxury and elegance.
+                We provide premium watches with quality,
+                style and excellent craftsmanship.
+            </p>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#technology">Technology</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About Us</a>
+        </div>
+
+        <!-- OUR BRANDS -->
+        <div class="footer-section">
+            <h3>Our Brands</h3>
+
+            <a href="https://www.rolex.com/en-us">Rolex</a>
+            <a href="https://www.michaelkors.global/pk/en/">Michael Kors</a>
+            <a href="https://www.bulova.com/us/en/collection/mens-watches">Bulova</a>
+            <a href="https://citizenwatch.com/us/en/collection/mens">Citizen</a>
+        </div>
+
+        <!-- CONTACT DETAILS -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+
+            <p>Email: info@albertowatches.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Address: Karachi, Pakistan</p>
+        </div>
+
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <div class="footer-social">
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>
+            © 2026 Alberto Watch Company.
+            All Rights Reserved.
+        </p>
+    </div>
+
+</footer>
+<!-- FOOTER END -->
+
+
+
+
+<!-- JAVASCRIPT FILE -->
+<script src="../JS/product.js"></script>
+
+</body>
+</html>
